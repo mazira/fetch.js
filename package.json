@@ -1,0 +1,26 @@
+{
+	"name": "fetchjs",
+	"description": "Get local copies of client side JS libraries",
+	"keywords": ["tool", "js", "download", "local", "cdn"],
+	"version": "0.0.1",
+	"author": "Uday Verma <uv@mazira.com>",
+	"contributors": [],
+	"repository": {
+		"type": "git",
+		"url": "http://github.com/mazira/fetchjs"
+	},
+	"main": "./lib/fetch.js",
+	"bin": {
+		"fetchjs": "./bin/fetchjs"
+	},
+	"scripts": {
+	},
+	"engines": {
+		"node": ">= 0.8.x"
+	},
+	"dependencies": {
+		"async": ">= 0.1.9",
+		"lodash": ">= 1.0.0-rc.3",
+		"optimist": "*"
+	}
+}
