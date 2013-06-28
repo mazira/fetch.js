@@ -25,7 +25,7 @@ Running fetchjs by itself will print details of supported commands.
     init    			Initialize repo (required)
     update				Update repo (do this once in a while)
     search <pattern>			Search for packages matching a certain name
-    get <package>			Get the latest version of the package and dump it to console
+    get <package names>			Get the latest version of the package and dump it to console
 
 You can search for availability of certain packages, `pattern` is just a regex.
 
@@ -33,9 +33,15 @@ To get contents of a package just do:
 
     fetchjs get jquery
 
-This will dump the entire contents of the jquery.min.js file to your console, you can easily redirect this to a file in your project.
+This will dump the entire jquery.min.js file to your console, you can easily redirect this to a file in your project.
 
     fetchjs get jquery > public/js/jquery.js
+
+You may also get multiple packages at a time and dump them all to a single js file if you like.
+
+	fetchjs get jquery async lodash.js > public/js/vendor.js
+
+You may want to be careful with your script dependencies when doing this, the packages are dumped to console as listed.
 
 And there you have it!
 
