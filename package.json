@@ -2,7 +2,7 @@
 	"name": "fetchjs",
 	"description": "Get local copies of client side JS libraries",
 	"keywords": ["tool", "js", "download", "local", "cdn"],
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"author": "Uday Verma <uv@mazira.com>",
 	"contributors": [],
 	"repository": {
